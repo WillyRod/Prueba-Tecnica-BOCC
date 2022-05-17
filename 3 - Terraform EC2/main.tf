@@ -32,7 +32,7 @@ resource "aws_instance" "example" {
 
     ebs_block_device {
     device_name = "/dev/xvda"
-    volume_size = 8
+    volume_size = 8 #Para esta prueba se solicitó que el disco tuviera una capacidad de 30 gb, la realicé con 8 debido a que no quiero superar los costes de la capa gratuita. el ejemplo es el mismo.
     volume_type = "gp2"
     }
     tags = {
